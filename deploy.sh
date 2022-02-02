@@ -1,6 +1,8 @@
 #!/bin/bash
 
+HASH_VERSION=`git rev-parse --short HEAD`
+
 docker login
-docker build -t nova-imagem .
-docker tag nova-imagem marcelohenrique/nova-imagem:latest
-docker push marcelohenrique/nova-imagem:latest
+docker build -t flask-hello-world .
+docker tag flask-hello-world marcelohenrique/flask-hello-world:$HASH_VERSION
+docker push marcelohenrique/flask-hello-world:$HASH_VERSION
