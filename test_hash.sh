@@ -1,3 +1,5 @@
 #!/bin/bash
 
-git rev-parse --short HEAD
+HASH_VERSION=`git rev-parse --short HEAD`
+
+touch commit-$HASH_VERSION.txt
