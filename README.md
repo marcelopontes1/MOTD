@@ -1,3 +1,3 @@
 ## TP-RT0903
 
-marcelohenrique/flask-hello-world:$HASH_VERSION
+marcelohenrique/flask-hello-world
